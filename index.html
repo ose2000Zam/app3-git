@@ -1,0 +1,359 @@
+﻿<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>primera aplicacion movil</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <style type="text/css">
+  body,td,th {
+	color: #000;
+}
+  </style>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ -->
+  <!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ 
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/celular02.jpg')">
+
+   <div data-role="page"id="Principal" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="c">
+     <h1>Telefonia celular</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    
+      </div>
+      <div>
+       <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+       <li class="ui-first-child ui-last-child"> 
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>¿Que es un telefono celular?</h2>
+              <p>Definicion</p>
+           </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Historia del telefono</h2>
+            <p>Su historia</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Clasificacion de celulares de acuerdo a su gama</h2>
+            <p>Muestra la clasificacion y algunos ejemplos</p>
+          </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Compañias en Mexico que manejan ele servicio telefonico</h2>
+           <p>Muestra las compañias telefonicas</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class"ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Telefonos del futuro</H2>
+          <P> Muestra telefonos del futuro</P>
+       </a>
+     </li>
+     </lu>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/images.jpg" alt="images" title="images" id="wows1_0"/></li>
+		<li><img src="data1/images/logo.png" alt="logo" title="logo" id="wows1_1"/></li>
+		<li><img src="data1/images/celular01.jpg" alt="celular01" title="celular01" id="wows1_2"/></li>
+		<li><img src="data1/images/celular02.jpg" alt="celular02" title="celular02" id="wows1_3"/></li>
+		<li><img src="data1/images/movistar.png" alt="Movistar" title="Movistar" id="wows1_4"/></li>
+		<li><img src="data1/images/celular3.jpg" alt="celular3" title="celular3" id="wows1_5"/></li>
+		<li><img src="data1/images/telcel.png" alt="Telcel" title="Telcel" id="wows1_6"/></li>
+		<li><img src="data1/images/celulara.jpg" alt="celularA" title="celularA" id="wows1_7"/></li>
+		<li><img src="data1/images/att.png" alt="AT&T" title="AT&T" id="wows1_8"/></li>
+		<li><img src="data1/images/celulares_futuro_2_2.jpg" alt="celulares_futuro_2_2" title="celulares_futuro_2_2" id="wows1_9"/></li>
+		<li><img src="data1/images/celulares_futuro_1.jpg" alt="celulares_futuro_1" title="celulares_futuro_1" id="wows1_10"/></li>
+		<li><img src="data1/images/celulares_futuro_2.jpg" alt="celulares_futuro_2" title="celulares_futuro_2" id="wows1_11"/></li>
+		<li><img src="data1/images/celulares_futuro_3.jpg" alt="celulares_futuro_3" title="celulares_futuro_3" id="wows1_12"/></li>
+		<li><img src="data1/images/celulares_futuro_3_2.jpg" alt="celulares_futuro_3_2" title="celulares_futuro_3_2" id="wows1_13"/></li>
+		<li><img src="data1/images/celulares_futuro_4.jpg" alt="celulares_futuro_4" title="celulares_futuro_4" id="wows1_14"/></li>
+		<li><img src="data1/images/gamabja.jpg" alt="gamabja" title="gamabja" id="wows1_15"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/gamalata.jpg" alt="bootstrap carousel" title="gamalata" id="wows1_16"/></a></li>
+		<li><img src="data1/images/gmamedia.jpg" alt="gmamedia" title="gmamedia" id="wows1_17"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="images"><span><img src="data1/tooltips/images.jpg" alt="images"/>1</span></a>
+		<a href="#" title="logo"><span><img src="data1/tooltips/logo.png" alt="logo"/>2</span></a>
+		<a href="#" title="celular01"><span><img src="data1/tooltips/celular01.jpg" alt="celular01"/>3</span></a>
+		<a href="#" title="celular02"><span><img src="data1/tooltips/celular02.jpg" alt="celular02"/>4</span></a>
+		<a href="#" title="Movistar"><span><img src="data1/tooltips/movistar.png" alt="Movistar"/>5</span></a>
+		<a href="#" title="celular3"><span><img src="data1/tooltips/celular3.jpg" alt="celular3"/>6</span></a>
+		<a href="#" title="Telcel"><span><img src="data1/tooltips/telcel.png" alt="Telcel"/>7</span></a>
+		<a href="#" title="celularA"><span><img src="data1/tooltips/celulara.jpg" alt="celularA"/>8</span></a>
+		<a href="#" title="AT&T"><span><img src="data1/tooltips/att.png" alt="AT&T"/>9</span></a>
+		<a href="#" title="celulares_futuro_2_2"><span><img src="data1/tooltips/celulares_futuro_2_2.jpg" alt="celulares_futuro_2_2"/>10</span></a>
+		<a href="#" title="celulares_futuro_1"><span><img src="data1/tooltips/celulares_futuro_1.jpg" alt="celulares_futuro_1"/>11</span></a>
+		<a href="#" title="celulares_futuro_2"><span><img src="data1/tooltips/celulares_futuro_2.jpg" alt="celulares_futuro_2"/>12</span></a>
+		<a href="#" title="celulares_futuro_3"><span><img src="data1/tooltips/celulares_futuro_3.jpg" alt="celulares_futuro_3"/>13</span></a>
+		<a href="#" title="celulares_futuro_3_2"><span><img src="data1/tooltips/celulares_futuro_3_2.jpg" alt="celulares_futuro_3_2"/>14</span></a>
+		<a href="#" title="celulares_futuro_4"><span><img src="data1/tooltips/celulares_futuro_4.jpg" alt="celulares_futuro_4"/>15</span></a>
+		<a href="#" title="gamabja"><span><img src="data1/tooltips/gamabja.jpg" alt="gamabja"/>16</span></a>
+		<a href="#" title="gamalata"><span><img src="data1/tooltips/gamalata.jpg" alt="gamalata"/>17</span></a>
+		<a href="#" title="gmamedia"><span><img src="data1/tooltips/gmamedia.jpg" alt="gmamedia"/>18</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+   <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+      <div>
+        <img src="imagenes/logo.png" width="46" height="46">
+      </div>
+      <div>
+         <h4>Aplicacion dos</h4>
+         <h4> Jose Esalona Hernandez </h4>
+        </div>
+      </div>
+      </div>
+      <div class="fade"id="Pagina1" data-add-back-btn="true" data-role="page" data-theme="c">
+      <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+        <h1>¿Que es un telefono celular?</h1>
+      </div>
+       <div data-role="content" aling="center">
+         <div>
+           <h4>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</h4>
+           <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/celular02.jpg',1)"><img src="imagenes/celular01.jpg" width="304" height="277" id="Image4"></a></p>
+           
+            <div data-role="collapsible" data-content-theme="false">
+       <h1>Foto celular</h1>
+         <div>
+      </div>
+      <div>
+        <img src="imagenes/celular3.jpg" width="20%" height="47%">
+        </div>
+       </div>
+        
+         </div> 
+        </div>
+     <div data-role="footer" data-theme="c" data-position="fixed">
+         <h4>Aplicacion dos,JEH</h4>
+        </div>
+       </div>
+     
+
+       <div data-role="page"id="Pagina2" data-add-back-btn="true" data-theme="c">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+         <h1>Historia del celular</h1>  
+       </div>
+       <div data-role="content" aling="center"> 
+        <div>
+          <h5 class="fade">
+          Desde este momento, hasta principios de los años 80s diversas compañías investigaron y buscaron ofrecer un sistema de comunicación a distancia para el público general.
+         La historia de la telefonía celular esta estrechamente ligada al desarrollo y evolución de la radio, los primeros teléfonos móviles eran demasiado grandes y pesados, por lo que su uso se restringió en principio a los autos. Generalmente el aparato se instalaba en la cabina y en el baúl se ponía un equipo de radio. El servicio no fue muy popular debido a su alto costo.
+         <br>
+          <br>
+         Historia y desarrollo de los móviles,  clasificación generaciones:
+       <br>
+           <br>
+           Primera generación 1G
+          <br>
+          <br>
+            El primer teléfono móvil fue el NMT 450 (Nordic Mobile Telephony 450 MHz), desarrollado por Ericsson, este aparato ,todavía usaba las señales de radio con modulación de frecuencia.
+            Para esta época los teléfonos todavía eran aparatos grandes y pesados, pero constituían un gran avance en términos de comunicación móvil. 
+            Posteriormente se avanzó a frecuencias de radio (900 MHz) superiores a las ya conocidas.
+            Además del sistema NTM se desarrollaron simultáneamente otros sistemas como AMPS (Advanced Mobile Phone System) en EEUU y TACS (Total Access Comunication System).
+  <br>
+  <br>
+           <center> <img src="imagenes/images.jpg" width="560" height="170" alt="a"></center>
+  <br>
+            Segunda Generación 2G
+          <br>
+            <br>
+            La segunda generación nace a principios de los años 90s, utiliza sistemas GSM, IS-136, iDEN e IS-95 con frecuencias de 900 y 1800 MHz.
+            En esta generación se abandona el uso de ondas de radio y se da paso a la era digital de las comunicaciones. Esto ofrece grandes ventajas como la calidad de voz, mejora en la seguridad y             bajos costos de operación.
+            Se establece como estándar el GSM (Global Sistem for Mobile communications o Groupe Spécial Mobile ). Este estándar da paso con el tiempo al CDMA, que incluia nuevas ventajas sobre su    predecesor. Esta etapa de transición en la telefonía celular se le como generación 2.5.
+  <br>
+  <br>
+            Tercera generación 3G
+    <br>
+    <br>
+            La tercera generación se caracteriza por ampliar características como ancho de banda y manejo de datos y ofrecer nuevos servicios como la teleconferencia, televisión , acceso pleno a    internet y descarga de archivos.
+            En este momento el desarrollo tecnológico ya posibilita un sistema totalmente nuevo: UMTS (Universal Mobile Telecommunications System).
+            Actualmente el sistema sigue siendo desarrollado, tanto en términos de tecnología y de mercadeo.
+            
+          </h5>
+          <p><img src="imagenes/hisTelefono1.jpg" width="346" height="262" alt="1"></p>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="c" data-position="fixed">
+         <h4>Aplicacion dos,JEH</h4>
+      </div>
+      </div>
+     
+ 
+     <div data-role="page"id="Pagina3" data-add-back-btn="true" data-theme="c">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+           <H1>Clasificacion de celulares.</h1>
+        </div>
+        <div data-role="content" aling="center">
+          <div>
+            <h4>Gama alta:<br>
+            <br>
+            Alta gama no es sinónimo de "alta calidad" sino de "alta categoria". Por ejemplo: este coche es de alta gama: este coche es de categoria (es lujoso, y cuesta un dineral). "Departamento de alta gama" (departamente lujoso, ubicado en un zona linda, muy caro)... Y sí, las cosas lujosas y caras son de buena calidad. 
+             </h4>
+            <center> <img src="imagenes/celularA.jpg" width="565" height="178" alt="a"></center>
+            <br>
+              <br>
+            
+        <h4>Gama Media:<br>
+        <br>
+        El término gama media es probablemente uno de los más recurridos en el mundillo de la telefonía. Si sois lectores habituales es probable que más de una vez hayáis visto este término escrito         en alguno de nuestros posts y, aunque es probable que la mayoría de vosotros lo reconozca, es posible que haya gente a la que no le quede muy claro el concepto.
+        </h4>
+        <center><img src="imagenes/gmamedia.jpg" width="571" height="265" alt="l"></center><br>
+        <br>
+        <h4>Gama Baja:<br>
+         La gama baja  es un celular que solo sirve para llamar y recibir llamada, enviar y recibir sms, pues no tienen internet ni soporte para aplicaciones.
+        </h4>
+        <p><center><img src="imagenes/gamabja.jpg" width="284" height="215" alt="o"></center></p>
+          </div>
+          </div>
+          <div data-role="footer" data-theme="c" data-position="fixed">
+             <h4>Apliccion dos.JEH</h4>
+         </div>
+         </div>
+         
+        
+       <div data-role="page" id="Pagina4"  data-add-back-btn="true" data-theme="c">
+         <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+          <h1>Compañias en Mexico</H1>
+           </div>
+           <div data-role="content" aling="center">
+             <div>
+              <h4>Telcel<br>
+              <br>
+              Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija,               servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil, (una filial de Grupo Carso).</h4>
+              <img src="imagenes/Telcel.png" width="245" height="54" alt="g"><br>
+   
+              <br>
+              <h4>Movistar<<br>
+              <br>
+              Movistar México (legalmente Pegaso PCS, S.A. de C.V.), es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica   Móviles.
+              </h4>
+             
+              <p><img src="imagenes/Movistar.png" width="160" height="144" alt="o"><br>
+                
+              </p>
+              <h4>AT&T <br>
+              <br>
+              AT&T México (de razón social: AT&T Comunicaciones Digitales, S. de R.L. de C.V.) es una empresa mexicana de telecomunicaciones, subsidiaria de la empresa estadounidense AT&T, cuya sede se encuentra en la Ciudad de México. Entre sus principales servicios está la telefonía móvil, el internet móvil, servicios de banda ancha móvil, entre otros.
+              </h4>
+              <p><img src="imagenes/AT&T.png" width="259" height="104" alt="y"></p>
+             </div>
+       </div>
+          <div data-role="footer" data-theme="c" data-position="fixed">
+         <h4>Apliccion uno.JEH</h4>
+         </div>
+         </div>
+         
+        
+         <div data-role="page" id="Pagina5"  data-add-back-btn="true" data-theme="c">
+            <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+           <h1>Telefonos del futuro</h1>
+        </div>
+          <div data-role="content" aling="center">
+            <div>
+              <h4>Los celulares se han convertido en parte esencial de nuestra vida cotidiana, tanto así que no concebimos salir sin ellos y menos convivir sin las nuevas aplicaciones que estos dispositivos traen.<br>
+ 
+             Actualmente existen varios prototipos de celulares que aún no han salido al mercado, pero resultan tan espectaculares que sin duda, vale la pena conocer. ¿Quieres verlos? Presta atención:<br>
+          <br>
+              <h2>NOKIA MORPH 4</h2><br>
+               <img src="imagenes/celulares_futuro_1.jpg" width="245" height="100" alt="g"><br>
+                <br>
+
+                Nokia junto a la Universidad de Cambridge crearon un celular moldeable vía nanotecnología, denominado “Morph”.
+ 
+                 Este celular es como salido de una película futurista. Lo más sorprendente es su increíble capacidad de moldearse en diferentes formas. Entre otro de sus atractivos destaca además su gran panel para ver videos.<br>
+ 
+                 Otra de las novedades de este súper teléfono es que posee una superficie “auto-lavable” y chips electrónicos totalmente transparentes al ojo humano.
+ 
+                De llegarse a concretar su fabricación masiva, este celular estaría a la venta dentro de siete años más.<br>
+               <br>
+               <br>
+               <h2>BLACK BOX</h2><br>
+               
+               <img src="imagenes/celulares_futuro_2.jpg" width="245" height="100" alt="g"><br>
+               <img src="imagenes/celulares_futuro_2_2.jpg" width="245" height="100" alt="g"><br>
+                <br>
+                Modelo que pertenece a BenQ-Siemens y que ha sido catalogado de impresionante, porque incorpora tecnología touch, como medio de navegación, tanto en la panatalla como en todo el cuerpo del dispositivo. <br>
+                <br>
+                 Al parecer la interfaz será bastante sencilla de utilizar. Pero esta maravilla tardará un poco en ver la luz, ya que aún no tiene fecha de lanzamiento.<br>
+                 <br>
+                 <br>
+               <h2>NOKIA 888</h2>
+
+               <img src="imagenes/celulares_futuro_3.jpg" width="245" height="100" alt="g"><br>
+
+               <img src="imagenes/celulares_futuro_3_2.jpg" width="245" height="100" alt="g"><br>
+                  Es el primer móvil flexible creado por el turco Tamer Nakisci, flamante ganador de los Premios de Diseño de los Países Bajos.<br>
+                  <br>
+                  Está diseñado para otorgar la máxima libertad y diversión, ya que puede cambiar de forma según las necesidades del usuario, gracias a su batería líquida. Puedes llevarlo como pulsera, enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la forma de los teléfonos tradicionales.<br>
+                  <br>
+                  Este prototipo permitiría enviar formas del teléfono a otros usuarios, por ejemplo si quieres mandarle un corazón a tu novia, sólo haz que tu teléfono se convierta en un corazón. De momento no saldrá al mercado.<br>
+                  <br>
+                  <br>
+                <h2>NEC TAG</h2><br>
+                <br>
+                  <img src="imagenes/celulares_futuro_4.jpg" width="245" height="100" alt="g">
+                  <br>
+                 Un móvil maleable presentado por NEC Design. Al igual que los modelos antes mencionados éste adopta diferentes formas, según el uso que le quieras dar.<br>
+                <br> 
+               Está hecho de un material con memoria, que posee varios sensores de presión para que el teléfono cambie y adopte las distintas posiciones.<br>
+                  <br>
+                 Este modelo tampoco ha salido al mercado y sus creadores no se han pronunciado sobre la posibilidad de llevarlo a las ventas masivas<br>
+ 
+          </h4>
+          
+         </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+         <h4>Aplicacion uno.JEH</h4>
+         </div>
+        </div>
+       
+         
+         
+</body>
+</html>
